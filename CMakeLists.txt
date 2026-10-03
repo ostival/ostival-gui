@@ -25,6 +25,9 @@ add_executable(ostival
 
     include/gui/MainGUIWindow.hpp
     src/gui/MainGUIWindow.cpp
+
+    include/gui/StatusBarBuilder.hpp
+    src/gui/StatusBarBuilder.cpp
 )
 
 target_include_directories(ostival PRIVATE
