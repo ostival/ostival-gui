@@ -9,11 +9,16 @@
 // =============================================================================
 
 #include <gui/MainGUIWindow.hpp>
+#include <gui/CentralDockBuilder.hpp>
 
 MainGUIWindow::MainGUIWindow(QWidget *parent) : QMainWindow(parent) {
     // Status Bar
     OstivalstatusBarBuilder = new StatusBarBuilder(this);
     QStatusBar *bbar = OstivalstatusBarBuilder->getStatusBar();
     bbar->showMessage("Ostival is Ready!", 1200);
-    
+
+    // Central Widget
+    CentralDockBuilder *central = new CentralDockBuilder(this);
+    setCentralWidget(central);
+
 }

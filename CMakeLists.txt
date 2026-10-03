@@ -28,6 +28,15 @@ add_executable(ostival
 
     include/gui/StatusBarBuilder.hpp
     src/gui/StatusBarBuilder.cpp
+
+    include/gui/CentralDockBuilder.hpp
+    src/gui/CentralDockBuilder.cpp
+
+    include/gui/LeftDockBuilder.hpp
+    src/gui/LeftDockBuilder.cpp
+
+    include/gui/RightDockBuilder.hpp
+    src/gui/RightDockBuilder.cpp
 )
 
 target_include_directories(ostival PRIVATE
