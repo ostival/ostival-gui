@@ -11,12 +11,20 @@
 #ifndef RIGHTDOCKBUILDER_H
 #define RIGHTDOCKBUILDER_H
 
-#include <QWidget>
+#include <QObject>
+#include <QDockWidget>
 
-class RightDockBuilder : public QWidget {
+
+class RightDockBuilder : public QObject {
     Q_OBJECT
 
+    public:
+        explicit RightDockBuilder(QMainWindow *mainWindow, QObject *parent = nullptr);
+        QDockWidget* getRightDockWidget() const;
 
+    private:
+        QMainWindow *OstivalmainWindow;
+        QDockWidget *OstivalrightDock;
 };
 
 

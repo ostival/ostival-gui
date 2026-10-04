@@ -12,10 +12,21 @@
 #define LEFTDOCKBUILDER_H
 
 #include <QWidget>
+#include <QObject>
+#include <QDockWidget>
+#include <QMainWindow>
 
-class LeftDockBuilder : public QWidget{
+
+class LeftDockBuilder : public QObject{
     Q_OBJECT
 
+    public:
+    explicit LeftDockBuilder(QMainWindow *mainWindow, QObject *parent = nullptr);
+    QDockWidget* getLeftDockWidget() const;
+
+    private:
+        QMainWindow *OstivalmainWindow;
+        QDockWidget *OstivalleftDock;
 };
 
 

@@ -21,4 +21,10 @@ MainGUIWindow::MainGUIWindow(QWidget *parent) : QMainWindow(parent) {
     CentralDockBuilder *central = new CentralDockBuilder(this);
     setCentralWidget(central);
 
+    // Left Dock Panel
+    OstivalleftDockBuilder = new LeftDockBuilder(this, this);
+
+    // Right Dock Panel
+    OstivalrightDockBuilder = new RightDockBuilder(this, this);
+
 }

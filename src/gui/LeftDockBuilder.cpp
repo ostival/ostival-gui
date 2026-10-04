@@ -7,3 +7,15 @@
 //
 // Made with 💚 by Team Ostival <hello@ostival.org>
 // =============================================================================
+
+#include <QMainWindow>
+#include <gui/LeftDockBuilder.hpp>
+
+LeftDockBuilder::LeftDockBuilder(QMainWindow *mainWindow, QObject *parent):QObject(parent), OstivalmainWindow(mainWindow){
+    OstivalleftDock = new QDockWidget("Left Panel", OstivalmainWindow);
+    OstivalmainWindow->addDockWidget(Qt::LeftDockWidgetArea, OstivalleftDock);
+}
+
+QDockWidget* LeftDockBuilder::getLeftDockWidget() const {
+    return OstivalleftDock;
+}

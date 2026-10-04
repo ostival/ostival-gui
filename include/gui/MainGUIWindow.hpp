@@ -13,6 +13,8 @@
 
 #include <QMainWindow>
 #include <gui/StatusBarBuilder.hpp>
+#include <gui/LeftDockBuilder.hpp>
+#include <gui/RightDockBuilder.hpp>
 
 class MainGUIWindow : public QMainWindow {
     Q_OBJECT
@@ -22,6 +24,8 @@ class MainGUIWindow : public QMainWindow {
         ~MainGUIWindow() override = default; 
     private:
         StatusBarBuilder *OstivalstatusBarBuilder = nullptr;
+        LeftDockBuilder *OstivalleftDockBuilder = nullptr;
+        RightDockBuilder *OstivalrightDockBuilder = nullptr;
 };
 
 #endif
