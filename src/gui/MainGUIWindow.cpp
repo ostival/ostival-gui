@@ -10,6 +10,7 @@
 
 #include <gui/MainGUIWindow.hpp>
 #include <gui/CentralDockBuilder.hpp>
+#include <gui/ToolBarBuilder.hpp>
 
 MainGUIWindow::MainGUIWindow(QWidget *parent) : QMainWindow(parent) {
     // Status Bar
@@ -26,5 +27,7 @@ MainGUIWindow::MainGUIWindow(QWidget *parent) : QMainWindow(parent) {
 
     // Right Dock Panel
     OstivalrightDockBuilder = new RightDockBuilder(this, this);
+
+    new ToolBarBuilder(this, this);
 
 }

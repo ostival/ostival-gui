@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/license/ostival/ostival-gui" alt="License">
   <img src="https://img.shields.io/badge/language-C%2B%2B-blue.svg" alt="Language">
+  <img src="https://github.com/ostival/ostival-gui/actions/workflows/cmake-multi-platform.yml/badge.svg" alt="Build Status">
   <img src="https://img.shields.io/github/issues/ostival/ostival-gui" alt="Issues">
   <img src="https://img.shields.io/github/stars/ostival/ostival-gui" alt="Stars">
 </p>

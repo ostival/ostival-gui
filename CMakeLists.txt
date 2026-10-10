@@ -37,6 +37,9 @@ add_executable(ostival
 
     include/gui/RightDockBuilder.hpp
     src/gui/RightDockBuilder.cpp
+
+    include/gui/ToolBarBuilder.hpp
+    src/gui/ToolBarBuilder.cpp
 )
 
 target_include_directories(ostival PRIVATE
