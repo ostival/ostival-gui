@@ -40,6 +40,9 @@ add_executable(ostival
 
     include/gui/ToolBarBuilder.hpp
     src/gui/ToolBarBuilder.cpp
+
+    include/gui/MenuBarBuilder.hpp
+    src/gui/MenuBarBuilder.cpp
 )
 
 target_include_directories(ostival PRIVATE
