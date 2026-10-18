@@ -9,8 +9,10 @@
 // =============================================================================
 
 #include <QApplication>
+#include <QDebug>
 #include <gui/config.hpp>
 #include <gui/MainGUIWindow.hpp>
+#include <gui/SplashScreen.hpp>
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
@@ -21,6 +23,15 @@ int main(int argc, char *argv[]) {
     app.setApplicationVersion(APP_VERSION);
     app.setOrganizationName(DEV_TEAM);
     app.setOrganizationDomain(DOMAIN_NAME);
+
+
+    SplashScreen init_dialog;
+
+    if(init_dialog.exec() == QDialog::Accepted){
+        qDebug() << "[Main] splash screen accepted";
+    } else {
+        return 0;
+    }
 
     // Main window invoke
     MainGUIWindow window;

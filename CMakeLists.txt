@@ -43,6 +43,11 @@ add_executable(ostival
 
     include/gui/MenuBarBuilder.hpp
     src/gui/MenuBarBuilder.cpp
+
+    include/gui/SplashScreen.hpp
+    src/gui/SplashScreen.cpp
+
+    src/gui/app_resources.qrc
 )
 
 target_include_directories(ostival PRIVATE
