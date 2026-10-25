@@ -48,6 +48,9 @@ add_executable(ostival
     src/gui/SplashScreen.cpp
 
     src/gui/app_resources.qrc
+
+    include/cli/ProjectFileHandler.hpp
+    src/cli/ProjectFileHandler.cpp
 )
 
 target_include_directories(ostival PRIVATE

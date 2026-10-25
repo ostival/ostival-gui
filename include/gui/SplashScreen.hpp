@@ -14,13 +14,21 @@
 #include <QDialog>
 #include <QPushButton>
 #include <QLineEdit>
+#include <QString>
 
 
 class SplashScreen : public QDialog {
     Q_OBJECT
 
+    private slots:
+        void browseForPath();
+        void validateAndAccept();
+        void openExistingProject();
+
     public:
         explicit SplashScreen(QWidget *parent = nullptr);
+        QString getProjectName() const;
+        QString getProjectPath() const;
 
     private:
         QWidget *createModeContainer;
@@ -30,6 +38,7 @@ class SplashScreen : public QDialog {
 
         QPushButton *browseButton;
         QPushButton *okButton;
+        QPushButton *openProjectButton;
         QPushButton *cancelButton;
 
 };

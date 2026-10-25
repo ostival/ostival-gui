@@ -20,6 +20,15 @@
 #define DOMAIN_NAME "ostival.org"
 
 
+inline QString projectName = "";
+inline QString projectPath = "";
+inline QString projectFile = "";
+inline QString mainDesignFile = "";
+inline QString mainTestbenchFile = "";
+inline QString mainPythonFile = "";
+inline QString defaultSyntax = "verilog";
+
+
 const QString SPLASH_SCREEN_STYLE = "QDialog {"
             "background-color: #2b2b2b;"
             "color: #f0f0f0;"
